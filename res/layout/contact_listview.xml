@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+     <TextView
+                   android:id="@+id/contact_to_monitor"
+                   
+                   android:layout_width="fill_parent"
+                   android:layout_height="40dp"
+                 
+                  android:paddingTop="12dp"
+                  android:paddingLeft="10dp"
+                  android:paddingRight="0dp"
+                  android:textSize="15dp" 
+                  android:background="#f8f9fb"
+                 	android:textStyle="bold"
+                  android:textAlignment="center"
+                     android:textColor="#4e5860"
+                  android:text="@string/CONTACT_TO_MONITOR" />
+     
+      <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+          
+            android:background="#dddee0"></LinearLayout>
+
+    <ListView
+        android:id="@+id/lvContacts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ListView>
+
+</LinearLayout>

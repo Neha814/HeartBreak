@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Chat with user :"
+            android:textColor="#4e5860"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="#4e5860"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <!-- android:layout_weight="10" -->
+
+        <Button
+            android:id="@+id/report_user"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:text="Report User"
+            android:textColor="#c22026"
+            android:textSize="19dp" />
+
+        <RelativeLayout
+            android:layout_width="2dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:background="#c22026" >
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/block_user"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:text="Block User"
+            android:textColor="#c22026"
+            android:textSize="19dp" />
+
+        <RelativeLayout
+            android:layout_width="2dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:background="#c22026" >
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/chat_rules"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:text="Chat Rules"
+            android:textColor="#c22026"
+            android:textSize="19dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/chat_listview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8.5"
+            android:background="#FFFFFF"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="0dp"
+            android:scrollbarSize="4dp"
+            android:scrollbarThumbVertical="@color/Blue" >
+        </ListView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            
+            android:background="#d8e0e2"
+			
+            android:orientation="horizontal"
+            android:weightSum="10"
+           	android:paddingBottom="2dp"
+            android:layout_gravity="bottom"
+            android:paddingLeft="4dp"
+            android:paddingRight="3dp"
+            android:paddingTop="2dp" 
+            >
+
+            <EditText
+                android:id="@+id/message"
+                android:layout_width="54dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+               	android:maxLines="15"
+                android:layout_weight="9.3"
+                
+               
+                android:gravity="center_vertical"
+                android:hint="Write Comment"
+                android:inputType="textMultiLine|textLongMessage|textNoSuggestions"
+               android:padding="7dp"
+                
+                android:scrollHorizontally="true" 
+                android:imeOptions="actionSend"/>
+
+            <Button
+                android:id="@+id/send"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="25dp"
+                android:layout_height="40dp"
+               android:layout_marginLeft="3.5dp"
+              
+                android:layout_weight="0.7"
+                
+                android:background="@drawable/send7"
+                android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+</RelativeLayout>
+
+<!-- android:background="@drawable/email" 
+ android:layout_gravity="center_vertical"
+ android:background="@drawable/lin2"-->

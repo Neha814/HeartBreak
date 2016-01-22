@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/LL1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E8E8E8"
+        android:orientation="vertical" >
+
+        
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/imageView1"
+            android:paddingRight="7dp"
+            android:paddingLeft="7dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+             android:background="#f1f2f4">
+
+            <Button
+                android:id="@+id/back"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/back_button" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               
+                android:layout_marginLeft="6dp"
+            	
+            	android:textColor="#4e5860"
+            android:background="#f1f2f4"
+                android:text="ENTER A CUPID ID"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        
+         >
+
+        <EditText
+            android:id="@+id/id"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+             android:singleLine="true"
+             android:gravity="center"
+             	android:background="@drawable/line_line"
+             android:hint="CUPID ID"
+            
+            android:ems="10" >
+        
+        <requestFocus />
+        </EditText>
+
+       
+
+        <EditText
+            android:id="@+id/nick_name"
+            android:layout_width="200dp"
+             android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/id"
+            android:layout_below="@+id/id"
+            android:layout_marginTop="35dp"
+           	android:background="@drawable/line_line"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="NICK NAME"
+            android:singleLine="true" >
+
+            
+        </EditText>
+        
+         <Button
+            android:id="@+id/monitor"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nick_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="53dp"
+            android:background="@drawable/monitor_button" />
+
+         <Button
+             android:id="@+id/button1"
+             style="?android:attr/buttonStyleSmall"
+             android:layout_width="30dp"
+             android:layout_height="70dp"
+             android:layout_alignParentLeft="true"
+             android:layout_centerVertical="true"
+             android:visibility="invisible"
+             android:background="@drawable/arrow" />
+
+    </RelativeLayout>
+
+    
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/message_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ellipsize="start"
+        android:padding="3dp"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textSize="10sp"
+        android:textStyle="italic" />
+
+    <RelativeLayout
+        android:id="@+id/chat_wrapper"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <!-- android:background="@drawable/bubble_green" -->
+
+        <TextView
+            android:id="@+id/chat_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_margin="5dip"
+            android:background="@drawable/rounded_textbox_grey"
+            android:padding="10dp"
+            android:paddingBottom="35dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:text="hlo hlo"
+           
+            android:textColor="#000000" />
+        <!--
+         android:background="#BCBCBC"
+         android:textColor="#0066ff"
+        -->
+    </RelativeLayout>
+
+</LinearLayout>

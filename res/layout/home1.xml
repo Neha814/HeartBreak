@@ -1,0 +1,228 @@
+<com.example.layout.MainLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- This holds our menu -->
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/activity_main_menu_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:cacheColorHint="@android:color/transparent" >
+        </ListView>
+    </LinearLayout>
+
+    <!-- This holds our content -->
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <!-- This acts as Actionbar -->
+        <!-- ******************************************************************************************* -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/activity_main_content_button_menu"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/iconheart"
+                    
+                    android:onClick="toggleMenu" />
+
+                
+
+                <LinearLayout
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="#f1f2f4" >
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/hrtbrk_text"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/heartbreak_ui" />
+
+                <LinearLayout
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="#f1f2f4" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="4" >
+                    
+                    <LinearLayout 
+                        android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:weightSum="2"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/contacts"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                       android:layout_weight="1.9"
+                        android:background="@drawable/img4" />
+                    
+                    <LinearLayout
+                         android:layout_width="match_parent"
+                         android:id="@+id/red1"
+                    android:layout_height="4dp"
+                    android:layout_weight="0.1"
+                    android:orientation="horizontal"
+                    android:background="#c22026" ></LinearLayout>
+                    
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:background="#f1f2f4" >
+                    </LinearLayout>
+                    
+                    <LinearLayout 
+                        android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:weightSum="2"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/monitor"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        
+                        android:layout_weight="1.9"
+                        android:background="@drawable/img5" />
+                    
+                      
+                    <LinearLayout
+                         android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_weight="0.1"
+                    android:background="#c22026"
+                     android:id="@+id/red2"
+                     android:orientation="horizontal" ></LinearLayout>
+                    
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:background="#f1f2f4" >
+                    </LinearLayout>
+                    
+                    <LinearLayout 
+                        android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:weightSum="2"
+                    android:orientation="vertical">
+                    
+
+                    <Button
+                        android:id="@+id/settings"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.9"
+                        android:background="@drawable/img6" />
+                    
+                    <LinearLayout
+                         android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_weight="0.1"
+                    android:background="#c22026"
+                    android:id="@+id/red3"
+                     android:orientation="horizontal" ></LinearLayout>
+                    
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:background="#f1f2f4" >
+                    </LinearLayout>
+                    
+                     <LinearLayout 
+                        android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:weightSum="2"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/chat"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.9"
+                      
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="#fd1313"
+                        android:background="@drawable/iconchat3" />
+                    
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_weight="0.1"
+                    android:background="#c22026" 
+                    android:id="@+id/red4"
+                     android:orientation="horizontal" ></LinearLayout>
+                    
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#d8e0e2" >
+            </LinearLayout>
+           
+        </LinearLayout>
+        <!-- *************************************************************************************************** -->
+        <!-- This is where fragment will show up -->
+
+        <FrameLayout
+            android:id="@+id/activity_main_content_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            
+
+        </FrameLayout>
+    </LinearLayout>
+
+</com.example.layout.MainLayout>

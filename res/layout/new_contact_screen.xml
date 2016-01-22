@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/LL1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f1f2f4"
+        android:orientation="vertical" >
+
+        
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/imageView1"
+          android:background="#f1f2f4"
+            android:paddingLeft="10dp"
+            android:textColor="#4e5860"
+            android:paddingRight="0dp"
+            android:paddingTop="15dp"
+            android:text="ADD A CONTACT TO MONITOR"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical"
+        android:weightSum="4" >
+
+        <Button
+            android:id="@+id/phone_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#000000"
+            android:text="+ PHONE #"
+            android:textSize="20dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+        
+        <LinearLayout 
+             android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#FFFFFF"></LinearLayout>
+
+        <Button
+            android:id="@+id/match_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ff0000"
+            android:text="+ MATCH ID"
+             android:textSize="20dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+        
+        <LinearLayout 
+             android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#FFFFFF"></LinearLayout>
+
+        <Button
+            android:id="@+id/cupid_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#0099ff"
+            android:text="+ CUPID ID"
+             android:textSize="20dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+        
+        <LinearLayout 
+             android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#FFFFFF"></LinearLayout>
+
+        <Button
+            android:id="@+id/fb_friend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#66ccff"
+            android:text="+ FB FRIEND"
+             android:textSize="20dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/LL1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+         android:background="#f1f2f4"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textSize="15dp"
+            android:textColor="#4e5860"
+           android:background="#f1f2f4"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:text="Terms" />
+
+    </RelativeLayout>
+    
+     <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/LL1"
+            android:background="#f1f2f4"></LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+         android:textColor="#4e5860"
+        android:text="Terms and Conditions"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    
+
+   
+</RelativeLayout>

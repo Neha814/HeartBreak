@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="8.9"
+        android:background="#98a4af"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/createAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="13dp"
+            android:gravity="center_horizontal"
+            android:text="CREATE ACCOUNT"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#98a4af" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.1"
+        android:background="#FFFFFF" >
+
+        <ImageView
+            android:id="@+id/image_brokenHeart"
+            android:layout_width="130dp"
+            android:layout_height="120dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="23dp"
+            android:gravity="center_vertical"
+            android:src="@drawable/heart1" />
+        
+        
+         
+
+      
+		<ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_brokenHeart"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/register" />
+        <LinearLayout
+            android:id="@+id/RR1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <EditText
+                android:id="@+id/phoneNumber"
+                android:layout_width="210dp"
+                android:layout_height="30dp"
+               	android:gravity="center"
+               
+                 android:background="@drawable/boxline"
+                android:ems="10"
+                android:inputType="phone"
+                android:padding="2dp"
+                android:maxLength="10"
+                android:singleLine="true" />
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+               
+                android:layout_marginLeft="6dp"
+                android:layout_alignTop="@+id/phoneNumber"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/ok"
+                android:textColor="#000000"
+                android:textSize="30dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="Enter your phone number. Heartlock will send a one time SMS message to verify your phone number. Carrier SMS charges may apply." />
+
+    </RelativeLayout>
+
+</LinearLayout>

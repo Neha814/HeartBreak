@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/LL1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      
+        
+       android:background="#f1f2f4"
+        android:orientation="vertical" >
+
+        
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/imageView1"
+            android:paddingTop="15dp"
+           android:textStyle="bold"
+           android:textSize="15dp"
+           android:paddingLeft="10dp"
+           android:paddingRight="0dp"
+            android:textColor="#4e5860"
+            android:background="#f1f2f4"
+            android:text="ADD A CONTACT TO MONITOR" />
+        
+    </RelativeLayout>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:scrollbarSize="4dp"
+        android:scrollbarThumbVertical="@color/Blue"
+         android:layout_below="@+id/LL1"
+        >
+     <!--    android:scrollbarThumbVertical="@drawable/scrollbarcolor"--> 
+       
+
+    </ListView>
+
+    
+
+</RelativeLayout>

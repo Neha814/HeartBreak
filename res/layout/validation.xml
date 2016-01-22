@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="8.9"
+        android:background="#98a4af"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/createAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="13dp"
+            android:gravity="center_horizontal"
+            android:text="VERIFY PHONE NUMBER"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#98a4af" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.1"
+        android:background="#FFFFFF" >
+
+        <ImageView
+            android:id="@+id/image_brokenHeart"
+            android:layout_width="130dp"
+            android:layout_height="120dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="23dp"
+            android:gravity="center_vertical"
+             android:src="@drawable/heart1" />
+        
+        
+         
+
+      
+		<ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_brokenHeart"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+           android:src="@drawable/register"  />
+        <LinearLayout
+            android:id="@+id/RR1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/imageView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <LinearLayout
+                android:id="@+id/l1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:orientation="horizontal"
+                android:paddingBottom="2dp" >
+
+                <EditText
+                    android:id="@+id/code1"
+                    android:layout_width="25dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/boxline"
+                    android:cursorVisible="true"
+                    android:ems="10"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:maxLength="1"
+                    android:padding="4dp"
+                    android:scrollHorizontally="true"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/code2"
+                    android:layout_width="25dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5.5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/boxline"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:maxLength="1"
+                    android:padding="4dp"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/code3"
+                    android:layout_width="25dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5.5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/boxline"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:maxLength="1"
+                    android:padding="4dp"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/code4"
+                    android:layout_width="25dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5.5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/boxline"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:maxLength="1"
+                    android:padding="4dp"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+
+             <Button
+                android:id="@+id/verify"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/l1"
+                android:background="@drawable/ok" />
+        </LinearLayout>
+
+        
+
+    </RelativeLayout>
+
+</LinearLayout>

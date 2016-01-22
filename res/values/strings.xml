@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HeartLock</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="CODE_TEXT">Verify Code</string>
+    <string name="CONTACT_TO_MONITOR">ADD A CONTACT TO MONITOR</string>
+    <string name="BLOCK_TEXT">Once you block someone, that person can no longer see things you post on your 
+	    timeline, tag you, invite you to events or groups, start a conversation with you, or 
+	    add you as a friend. Note: Does not include apps, games or groups you both 
+	    participate in.</string>
+
+</resources>

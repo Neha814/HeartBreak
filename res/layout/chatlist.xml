@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/LL1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      
+        
+      android:background="#f1f2f4"
+        android:orientation="vertical" >
+
+        
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+           android:paddingTop="20dp"
+           android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/imageView1"
+            android:layout_centerVertical="true"
+             android:textSize="15dp"
+            android:textStyle="bold" 
+            android:textColor="#4e5860"
+          android:background="#f1f2f4"
+            android:text="CHAT" />
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+           android:layout_below="@+id/textView1"
+            android:background="#f1f2f4"></LinearLayout>
+        
+    </RelativeLayout>
+
+    <ListView
+       
+        android:id="@+id/chatList_listview"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:scrollbarSize="4dp"
+        android:scrollbarThumbVertical="@color/Blue"
+         android:layout_below="@+id/LL1"
+        >
+     <!--    android:scrollbarThumbVertical="@drawable/scrollbarcolor"--> 
+       
+
+    </ListView>
+
+    
+
+</RelativeLayout>
